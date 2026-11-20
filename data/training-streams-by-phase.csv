@@ -1,0 +1,15 @@
+phase,stream,channel,kernels,kernel_s,long_kernel_s,top_kernel,top_kernel_s
+collection,7,0,49775,0.33,0.0,sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize,0.15
+collection,13,1,1240,0.01,0.0,_Z17gemv2T_kernel_valIiiffffLi128ELi16ELi2ELi2ELb0ELb0E18cublasGemvPar,0.0
+collection,21,2,1640,0.01,0.0,_Z17gemv2T_kernel_valIiiffffLi128ELi16ELi2ELi2ELb0ELb0E18cublasGemvPar,0.0
+tokenizer,7,0,238656,28.17,10.56,sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize,5.65
+tokenizer,13,1,6000,0.53,0.0,_Z15fft2d_r2c_64x64IfEvP6float2PKT_iiiiiiii,0.29
+tokenizer,30,3,19200,1.67,0.0,sm80_xmma_gemm_cf32cf32_f32f32_cf32_nt_n_tilesize64x64x8_stage3_warpsi,0.76
+tokenizer,31,4,16800,1.48,0.0,sm80_xmma_gemm_cf32cf32_f32f32_cf32_nt_n_tilesize64x64x8_stage3_warpsi,0.72
+world_model,7,0,993864,58.5,17.68,_Z48fmha_cutlassB_f32_aligned_64x64_k64_dropout_sm80N22PyTorchMemEffAt,13.64
+actor_critic,7,0,1370546,47.21,9.78,_ZN2at6native18elementwise_kernelILi128ELi2EZNS0_22gpu_kernel_impl_noc,8.7
+actor_critic,13,1,11200,0.38,0.0,_Z15fft2d_r2c_16x16IfEvP6float2PKT_iiiiiiii,0.25
+actor_critic,21,2,12480,0.15,0.0,sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize32x32x8_stage3_warpsize1,0.12
+actor_critic,30,3,8160,0.11,0.0,_ZN7cutlass7Kernel2I41cutlass_80_simt_sgemm_64x64_8x5_nn_align1EEvNT_6,0.06
+actor_critic,34,6,2720,0.05,0.0,sm80_xmma_gemm_f32f32_f32f32_f32_nt_n_tilesize128x32x8_stage3_warpsize,0.05
+actor_critic,38,5,10880,0.08,0.0,_ZN7cutlass7Kernel2I41cutlass_80_simt_sgemm_64x64_8x5_nn_align1EEvNT_6,0.05
